@@ -1,0 +1,53 @@
+.videoFooter{
+    position: relative;
+    bottom: 20%;
+    color: white;
+    margin-left: 20px;
+}
+
+.footerTxt h3, .footerTxt p{
+    padding-bottom: 20px;
+}
+
+.footerMsc{
+    display: flex;
+}
+
+.musicTxt {
+    width: 80%;
+    overflow-x: hidden;
+}
+
+.musicTxt p{
+    animation: moveTxt 5s infinite linear; 
+}
+
+.footerImg{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    height: 50px;
+    filter: invert(1);
+    animation: spinVinil 2s infinite linear;
+}
+
+@keyframes spinVinil {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveTxt {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
